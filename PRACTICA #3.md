@@ -58,23 +58,47 @@ Para desarrollar esta práctica fue importante tener conocimientos sobre:
 ### Parte 1: Base de datos sin volumen
 
 1. Crear contenedor PostgreSQL `server_db` sin volumen.
-
+![image](https://github.com/user-attachments/assets/f25104a9-d38a-4216-9316-0aa17111cade)
 2. Conectarse desde TablePlus.
+![image](https://github.com/user-attachments/assets/4de119e9-be96-40c1-94e2-a7990efebe4a)
 3. Crear base de datos `test` y tabla `customer`.
+![image](https://github.com/user-attachments/assets/04933e77-cf75-4f4e-992d-b4b600d50fee)
+
 4. Insertar registros.
+![image](https://github.com/user-attachments/assets/6d9f97f7-73de-444e-a8f9-e587d9fab4b8)
+![image](https://github.com/user-attachments/assets/623d076b-54ce-4d1d-9062-487a93d94d23)
+
 5. Detener y eliminar el contenedor.
-6. Volver a crear el contenedor `server_db`.
-7. Comprobar que los datos no se conservaron (porque no usamos volumen).
+![image](https://github.com/user-attachments/assets/d859cb18-149a-49e3-a8af-43c172fed463)
+
+6. Comprobar que los datos no se conservaron (porque no usamos volumen).
+![image](https://github.com/user-attachments/assets/975eb8a3-60c7-4de1-bd47-6ef2545d4f78)
+
 
 ### Parte 2: Base de datos con volumen
 
 1. Crear volumen `pg_data` con `docker volume create`.
+![image](https://github.com/user-attachments/assets/c50901dd-9471-4de1-83b3-aeee7b1d7962)
+
 2. Crear contenedor `server_db2` y montar volumen.
 3. Conectarse desde TablePlus.
+![image](https://github.com/user-attachments/assets/e43ccee3-2f3b-4e86-85c1-a395af2411e6)
+
 4. Crear base de datos `test`, tabla `customer`, e insertar datos.
+![image](https://github.com/user-attachments/assets/13ac4d90-96e4-449f-a016-8a10e2c766dd)
+
+![image](https://github.com/user-attachments/assets/6eae1f1b-1ed0-4ffa-a47a-31539e726d6d)
+
 5. Detener y eliminar el contenedor.
+![image](https://github.com/user-attachments/assets/589e2625-fded-4afc-ac86-0423fb816be1)
+![image](https://github.com/user-attachments/assets/63d16d80-642a-4af9-820a-424a3b5b5c8c)
+
 6. Volver a crear `server_db2` con el volumen `pg_data`.
+![image](https://github.com/user-attachments/assets/e9e24ca2-1498-44e4-b3cd-5bcc2f6a74e8)
+
 7. Comprobar que la base de datos y sus registros **sí persistieron**.
+![image](https://github.com/user-attachments/assets/22527aa9-6f64-45a8-a381-2b13031e91ac)
+
 
 ## 9. Resultados esperados
 
